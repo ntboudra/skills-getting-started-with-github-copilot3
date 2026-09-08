@@ -85,17 +85,36 @@ section h3 {
 }
 
 .participants ul {
-  margin: 8px 0 0 20px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
   color: #555;
 }
 
 .participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   padding: 2px 0;
 }
 
 .participants .no-participants {
   color: #777;
   font-style: italic;
+}
+
+.delete-participant {
+  flex: 0 0 auto;
+  padding: 2px 6px;
+  background-color: transparent;
+  color: #c62828;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
 }
 
 .form-group {
